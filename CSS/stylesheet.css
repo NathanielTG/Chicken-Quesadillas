@@ -1,0 +1,305 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    background-color: #FFECD3;
+}
+
+/*Universal styling*/
+
+button {
+    background-color: #D94C17;
+    color: white;
+    border: none;
+    border-radius: 70px;
+    padding: 40px 100px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: white;
+    color: #582716
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+/*Header section*/
+
+header {
+    background-color: #BFBB7E;
+    padding: 0px 50px 0px 50px;
+}
+
+#logo {
+    display: inline-block;
+}
+
+#logo img {
+    width: 75%;
+}
+
+nav {
+    float: right;
+    display: inline-block;
+    margin-top: 19px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 15px;
+    list-style-type: none;
+}
+
+/*Hero banner section*/
+
+#heroBanner h1 {
+    color: #582716;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+h2 {
+    color: #D94C17;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+}
+
+h3 {
+    color: #582716;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 46px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; 
+	width: 100%;  
+}
+
+.column {
+    flex: 50%;
+}
+
+#heroBanner {
+    background-image: url('../ImagesOfficial/homePageBackground.jpg');
+    width: 100%;
+    height: 737px;
+    background-size: cover;
+    position: relative;
+}
+
+#homePageButtons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+}
+
+.heroBannerButton {
+    display: block;
+    margin: 10% auto;
+}
+
+/*Locations*/
+
+.locationColumn a {
+    display: inline-block;
+    line-height: 1em;
+    overflow: hidden;
+}
+
+#locationImages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#locationsPlaces {
+    text-align: center;
+    height: 742px;
+}
+
+#locationsPlaces h2 {
+    margin-top: 25px;
+}
+
+#locationsPlaces p {
+    margin-top: 25px;
+    font-weight: 300;
+    font-size: 46px;
+    margin-bottom: 45px;
+}
+
+.locationColumn {
+    flex: 33.33%;
+    position: relative;
+    width: 50%;
+}
+
+.locationColumn img {
+    display: inline-block;
+    margin: 0 auto;
+    width: 400px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.locationColumn:hover .image { 
+    opacity: 0.4;
+    display: inline-block;
+    line-height: 1em;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+} 
+
+.locationColumn:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #F3A344;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+#locationsPlaces h3 {
+    font-size: 26px;
+    padding-top: 20px;
+}
+
+/*Recipe page*/
+
+.ingredients li {
+    padding: 15px 0px;
+}
+
+.column ul {
+    font-size: 24px;
+    padding-left: 58px;
+}
+
+.column ol {
+    font-size: 27px;
+}
+
+.instructions li {
+    padding: 5px 0px;
+}
+
+.column h2 {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.row {
+    padding: 0px;
+    height: 767px;
+}
+
+/*Footer section*/
+
+footer {
+    background-color: #F3A344;
+    padding: 40px 100px;
+}
+
+.footerInfo {
+    color: black;
+    font-size: 24px;
+    display: inline-block;
+}
+
+.footerInfo:nth-child(2) {
+    float: right;
+}
